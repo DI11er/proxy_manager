@@ -14,11 +14,11 @@ services:
         - ./docker/nginx-pm/data:/data
         - ./docker/nginx-pm/letsencrypt:/etc/letsencrypt
     environment:
-        - DB_MYSQL_HOSTR=db
+        - DB_MYSQL_HOST=db
         - DB_MYSQL_PORT=3306
-        - DB_MYSQL_USER=npmm
-        - DB_MYSQL_PASSWORD=npm
-        - DB_MYSQL_NAME=n-pm
+        - DB_MYSQL_USER=npm
+        - DB_MYSQL_PASSWORD=
+        - DB_MYSQL_NAME=npm
         # - DISABLE_IPV6=true
     depends_on:
         - db
@@ -32,8 +32,8 @@ services:
     volumes:
         - ./docker/mariadb/mysql:/var/lib/mysql
     environment:
-        - MYSQL_ROOT_PASSWORD=npm
+        - MYSQL_ROOT_PASSWORD=
         - MYSQL_DATABASE=npm
         - MYSQL_USER=npm
-        - MYSQL_PASSWORD=npm
+        - MYSQL_PASSWORD=
 
