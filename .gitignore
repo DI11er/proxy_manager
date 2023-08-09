@@ -1,4 +1,4 @@
-docker-compose.yam
+docker-compose.yaml
 docker/nginx-pm/data
+docker/nginx-pm/letsencrypt
 docker/mariadb/mysql
-docker/nginx-pm/letsencryptl
